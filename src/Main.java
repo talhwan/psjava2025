@@ -20,6 +20,7 @@ public class Main {
         bmi = weight / (height * height * 0.01 * 0.01);
         bmi = Math.round(bmi * 10) / 10.0;
         System.out.println(bmi);
+        in.close();
     }
 
     public void j002() {
@@ -33,5 +34,6 @@ public class Main {
         c_degree = in.nextDouble();
         d_degree = c_degree * 1.8 + 32;
         System.out.println(d_degree);
+        in.close();
     }
 }
