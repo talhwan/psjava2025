@@ -6,13 +6,9 @@
 
 ![j011](./captures/j011.png)
 
-![j011](./captures/j011_1.png)
-
 - j012. 아파트 평형 계산 및 종류 판정
 
 ![j012](./captures/j012.png)
-
-![j012](./captures/j012_1.png)
 
 
 ### 소감
