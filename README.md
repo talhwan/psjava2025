@@ -1,4 +1,4 @@
-# 프로그래밍 스튜디오 Java Lab 01
+# 프로그래밍 스튜디오 Java Lab 02
 분반 / 학번 / 이름
 
 ### Java Lab#2 - Condition
