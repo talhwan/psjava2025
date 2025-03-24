@@ -1,15 +1,16 @@
 # 프로그래밍 스튜디오 Java Lab 01
 분반 / 학번 / 이름
 
-### Java Lab#1 - Console Input & Output
-- j001. 키와 몸무게로 비만도(BMI) 계산
+### Java Lab#2 - Condition
+- j011. 비만 판정하기
 
-![j001](./captures/j001.png)
+![j011](./captures/j011.png)
 
-- j002. 섭씨 온도를 화씨 온도로 변환
+- j012. 아파트 평형 계산 및 종류 판정
 
-![j002](./captures/j002.png)
+![j012](./captures/j012.png)
+
 
 ### 소감
-자바 실습 어렵지 않습니다. 잘 해보겠습니다!!!@
+4주차 자바 실습 열심히 하겠습니다.
 

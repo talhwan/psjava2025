@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class Main {
+public class Main20250317 {
     public static void main(String[] args) {
-        Main ps = new Main();
+        Main20250317 ps = new Main20250317();
         ps.j001(); //이곳에서 문제 번호에 해당하는 메서드 실행
         //ps.j002();
     }
