@@ -1,20 +1,12 @@
-# 프로그래밍 스튜디오 Java Lab 02
+# 프로그래밍 스튜디오 Java Lab 03
 분반 / 학번 / 이름
 
-### Java Lab#2 - Condition
-- j011. 비만 판정하기
+### Java Lab#3 - Iteration (array)
+- j021. 비만인 사람은 몇명인가?
 
-![j011](./captures/j011.png)
-
-![j011](./captures/j011_1.png)
-
-- j012. 아파트 평형 계산 및 종류 판정
-
-![j012](./captures/j012.png)
-
-![j012](./captures/j012_1.png)
+![j021](./captures/j021.png)
 
 
 ### 소감
-4주차 자바 실습 열심히 하겠습니다!!! 자바 화이팅!
+5주차 자바 실습 열심히 하겠습니다!!! 자바 화이팅!
 
