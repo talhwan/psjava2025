@@ -1,0 +1,28 @@
+public class Main20250512004 {
+    public static void main(String[] args) {
+        Main20250512004 ps = new Main20250512004();
+        ps.j071();
+    }
+
+    public void j071() {
+
+    }
+    public void jtest() {
+        // 배열만 사용해서, 어레이 리스트를 구현해보기..
+        // 제너릭은 사용하지 않고, String만 취급하는 어레이 리스트!!
+        // add, get, remove, set
+        // 클래스 명은 ListArray
+        ListArray2 listArray2 = new ListArray2();
+        listArray2.add("1");
+        listArray2.add("11");
+        listArray2.add("111");
+        listArray2.add("1111");
+        listArray2.printThis();
+        System.out.println(listArray2.get(2));
+        listArray2.set(2, "111new");
+        System.out.println(listArray2.get(2));
+        listArray2.remove(2);
+        listArray2.printThis();
+        System.out.println(listArray2.size());
+    }
+}
