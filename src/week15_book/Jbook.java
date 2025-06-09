@@ -1,4 +1,4 @@
-package week15;
+package week15_book;
 
 public class Jbook {
     String code; // 책 일련번호 (id값 처럼 사용할 예정)

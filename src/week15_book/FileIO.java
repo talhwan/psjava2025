@@ -1,12 +1,14 @@
-package week15;
+package week15_book;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.Scanner;
 
 public class FileIO {
+    String rootPath = "./src/week15_book/";
     public void out(String filename, String word) {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream("./src/week15/"+filename+".txt");
+            FileOutputStream fileOutputStream = new FileOutputStream(rootPath+filename+".txt");
             byte b[] = word.getBytes();
             fileOutputStream.write(b);
             fileOutputStream.close();
@@ -17,7 +19,7 @@ public class FileIO {
     public String in(String filename) {
         StringBuilder result = new StringBuilder();
         try{
-            File file = new File("./src/week15/"+filename+".txt");
+            File file = new File(rootPath+filename+".txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 result.append(scanner.nextLine() + "\n");

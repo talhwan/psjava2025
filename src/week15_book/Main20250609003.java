@@ -1,6 +1,4 @@
-package week15;
-
-import java.util.*;
+package week15_book;
 
 public class Main20250609003 {
 

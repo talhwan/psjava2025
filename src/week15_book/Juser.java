@@ -1,4 +1,4 @@
-package week15;
+package week15_book;
 
 public class Juser {
     String uid; // 학번
