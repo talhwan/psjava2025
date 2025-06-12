@@ -1,5 +1,7 @@
 package week15_book;
 
+import java.util.List;
+
 public class Main20250609003 {
 
     public static void main(String[] args) {
@@ -8,11 +10,6 @@ public class Main20250609003 {
     }
 
     public void jmini(){
-        FileIO fileIO = new FileIO();
-        fileIO.out("books", "");
-
-        String aaaa = fileIO.in("books");
-        System.out.println(aaaa);
         /*
         * 도서관리 시스템!!
         *
@@ -23,9 +20,30 @@ public class Main20250609003 {
         * => 책 / 사용자 / 대여 각각 클래스 만들기!
         * */
 
-        //책 등록
-        Jbook jbook = new Jbook("111", "title1","author1");
-        //books.add(jbook);
+        JrentManager jrentManager = new JrentManagerImpl();
+        Jrent jrent = new Jrent("101", "111");
+        jrentManager.add(jrent);
+
+        jrentManager.done("111");
+
+/*
+        JbookManager jbookManager = new JbookManagerImpl();
+        List<Jbook> books = jbookManager.getList();
+        System.out.println(books);
+
+        Jbook jbook = new Jbook("112", "title1","author1");
+        jbookManager.add(jbook);
+        System.out.println(books);
+
+
+        JuserManager juserManager = new JuserManagerImpl();
+        List<Juser> users = juserManager.getList();
+        System.out.println(users);
+
+        Juser juser = new Juser("102", "name", "011", "2000-01-01", "M");
+        juserManager.add(juser);
+        System.out.println(users);
+        */
 
 
     }

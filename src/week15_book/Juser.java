@@ -13,6 +13,7 @@ public class Juser {
         this.name = name;
         this.phone = phone;
         this.birth = birth;
+        this.gender = gender;
     }
 
     public String getUid() {
@@ -44,5 +45,10 @@ public class Juser {
     }
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return uid + "\t" + name + "\t" + phone + "\t" + birth + "\t" + gender;
     }
 }

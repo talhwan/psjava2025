@@ -2,6 +2,7 @@ package week15_book;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Jrent {
@@ -12,21 +13,31 @@ public class Jrent {
     String endDate; // 대여 종료일
 
     public Jrent() {}
-    public Jrent(String userId, String bookId, String startDate, String expectedDate) {
+    public Jrent(String userId, String bookId, String startDate, String expectedDate, String endDate) {
         this.userId = userId;
         this.bookId = bookId;
         this.startDate = startDate;
         this.expectedDate = expectedDate;
+        this.endDate = endDate;
+    }
+    public Jrent(String userId, String bookId) {
+        this.userId = userId;
+        this.bookId = bookId;
+        this.startDate = getNow(0);
+        this.expectedDate = getNow(10);
         this.endDate = null;
     }
 
-    public String getNow(){
-        return new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+    public String getNow(int addDate){
+        Calendar cal1 = Calendar.getInstance();
+        cal1.add(Calendar.DATE, addDate);
+        Date date = new Date(cal1.getTimeInMillis());
+        return new SimpleDateFormat("yyyy-MM-dd").format(date);
     }
 
     // 늦게 반납했는지 확인하기
     public boolean isOnTime(){
-        String tempDate = getNow();
+        String tempDate = getNow(0);
         if(getEndDate() != null){
             tempDate = getEndDate();
         }
@@ -42,6 +53,10 @@ public class Jrent {
     public boolean isReturned(){
         //return !(this.endDate == null);
         return !(getEndDate() == null);
+    }
+
+    public void done(){
+        setEndDate(getNow(0));
     }
 
     public String getUserId() {
@@ -73,5 +88,10 @@ public class Jrent {
     }
     public void setEndDate(String endDate) {
         this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        return userId + "\t" + bookId + "\t" + startDate + "\t" + expectedDate + "\t" + endDate;
     }
 }

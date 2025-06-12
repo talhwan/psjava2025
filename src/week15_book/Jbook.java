@@ -30,4 +30,9 @@ public class Jbook {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    @Override
+    public String toString() {
+        return code + "\t" + title + "\t" + author;
+    }
 }
