@@ -25,5 +25,14 @@ public class Main20250609 {
         Huser huser2 = new Huser("2", "이름2", "012", "1990-01-01");
         huserManager.add(huser2);
 
+        HreservationManager hreservationManager = new HreservationManagerImpl();
+        /*
+        int aaa =  hreservationManager.getTerm("1990-01-01", "1990-01-03");
+        System.out.println(aaa);
+        String bbb = hreservationManager.addDate("1990-01-01", 3);
+        System.out.println(bbb);
+        */
+        Hreservation hreservation = new Hreservation("3", "2", "102", "2025-05-24", "2025-05-25", true);
+        hreservationManager.add(hreservation);
     }
 }

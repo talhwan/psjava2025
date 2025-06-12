@@ -50,4 +50,8 @@ public class Hreservation {
     }
 
 
+    @Override
+    public String toString() {
+        return id + " " + userId + " " + roomId + " " + startDate + " " + endDate + " " + isPaid;
+    }
 }
